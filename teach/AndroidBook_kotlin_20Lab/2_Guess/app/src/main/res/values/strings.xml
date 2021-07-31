@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">猜拳</string>
+    <string name="請輸入玩家名">請輸入玩家名</string>
+    <string name="請輸入玩家名開始遊戲">請輸入玩家名開始遊戲</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="200dp"
+    android:paddingStart="100dp"
+    tools:ignore="RtlSymmetry">
+
+    <!--input name-->
+    <EditText
+        android:id="@+id/playerName_IF"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/請輸入玩家名"
+        android:inputType="textPersonName"
+        android:importantForAutofill="no"
+        android:textColor="@color/black"/>
+
+    <!--say input name!!!-->
+    <TextView
+        android:id="@+id/sayname_T"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/請輸入玩家名開始遊戲"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        android:layout_below="@id/playerName_IF"/>
+
+    <!--choose the button-->
+    <RadioGroup
+        android:id="@+id/choose_RG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/sayname_T">
+
+        <!--scissor-->
+        <RadioButton
+            android:id="@+id/choose_V_RB"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="剪刀" />
+
+        <!--stone-->
+        <RadioButton
+            android:id="@+id/choose_O_RB"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:text="石頭" />
+
+        <!--paper-->
+        <RadioButton
+            android:id="@+id/choose_W_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="布"/>
+    </RadioGroup>
+
+    <!--start game button-->
+    <Button
+        android:id="@+id/startGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="猜拳"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/choose_RG"
+        android:layout_margin="10dp"/>
+
+    <!--______________finish______________-->
+
+    <!--name-->
+    <TextView
+        android:id="@+id/name_T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startGame"
+        android:paddingRight="10dp"
+        android:text="名字"/>
+
+    <!--winner-->
+    <TextView
+        android:id="@+id/winner_T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/name_T"
+        android:layout_toRightOf="@id/name_T"
+        android:paddingRight="10dp"
+        android:text="贏家"/>
+
+    <!--player choose-->
+    <TextView
+        android:id="@+id/in_T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/name_T"
+        android:layout_toRightOf="@id/winner_T"
+        android:paddingRight="10dp"
+        android:text="我方出拳"/>
+
+    <!--computer choose-->
+    <TextView
+        android:id="@+id/out_T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/name_T"
+        android:layout_toRightOf="@id/in_T"
+        android:paddingRight="10dp"
+        android:text="對方出拳"/>
+</RelativeLayout>

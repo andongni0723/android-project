@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_marginTop="200dp">
+
+    <TextView
+        android:id="@+id/order_T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="點餐: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/choose_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="選擇"
+        android:layout_toRightOf="@id/order_T"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/checkedOrder_T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_T"
+        android:layout_marginTop="50dp"
+        android:text="確認餐點:"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/sayOrder_T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkedOrder_T"
+        android:layout_marginTop="10dp"
+        android:text="飲料: 無\n\n甜度: 無\n\n冰塊: 無"/>
+
+    <Button
+        android:id="@+id/order_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="送出"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#FF0000"/>
+</RelativeLayout>

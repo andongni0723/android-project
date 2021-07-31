@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp">
+
+    <!--drink text-->
+    <TextView
+        android:id="@+id/text01_T"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="飲料"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <!--input drink-->
+    <EditText
+        android:id="@+id/inputDrink_IF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="請輸入飲料名稱"
+        android:layout_marginTop="10dp"
+        />
+
+    <!--sweet text-->
+    <TextView
+        android:id="@+id/text02_T"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="甜度"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+    <!--choose sweet-->
+    <RadioGroup
+        android:id="@+id/RG01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/S0_RB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="無糖"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/S3_RB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微糖"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/S5_RB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="半糖"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/S10_RB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="全糖"
+            android:checked="true"
+            android:textSize="15sp"/>
+    </RadioGroup>
+
+    <!--ice text-->
+    <TextView
+        android:id="@+id/text03_T"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="冰塊"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+    <!--choose ice-->
+    <RadioGroup
+        android:id="@+id/RG02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/I0_RB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="去冰"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/I3_RB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微冰"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/I5_RB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="半冰"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/I10_RB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="正常冰"
+            android:checked="true"
+            android:textSize="15sp"/>
+    </RadioGroup>
+
+    <!--OK button-->
+    <Button
+        android:id="@+id/OK_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="送入"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#0080FF"/>
+</LinearLayout>
