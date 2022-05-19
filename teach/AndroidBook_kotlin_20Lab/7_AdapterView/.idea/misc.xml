@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/User_Andongni/Desktop/android_project/teach/AndroidBook_kotlin_20Lab/7_AdapterView/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/User_Andongni/Desktop/android_project/teach/AndroidBook_kotlin_20Lab/7_AdapterView/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/User_Andongni/Desktop/android_project/teach/AndroidBook_kotlin_20Lab/7_AdapterView/app/src/main/res/layout/adapter_horizontal.xml" value="0.18" />
+        <entry key="..\:/User_Andongni/Desktop/android_project/teach/AndroidBook_kotlin_20Lab/7_AdapterView/app/src/main/res/layout/adapter_vertical.xml" value="0.18" />
       </map>
     </option>
   </component>
