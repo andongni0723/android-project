@@ -24,7 +24,6 @@ class MyApp extends StatelessWidget {
         width: 200,
         height: 200,
         alignment: Alignment.center,
-        transform: Matrix4.skewY(0.1),
         margin: const EdgeInsets.fromLTRB(0, 60, 0, 0),
         decoration: BoxDecoration(
           color: Colors.black,
